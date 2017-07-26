@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/checkBox3"
+            android:layout_alignLeft="@+id/checkBox3"
+            android:layout_alignStart="@+id/checkBox3"
+            android:text="拦截" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:text="消费"
+            android:layout_above="@+id/checkBox4"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkBox4"
+            android:layout_alignBottom="@+id/checkBox4"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="拦截" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkBox2"
+            android:layout_alignStart="@+id/checkBox2"
+            android:layout_centerVertical="true"
+            android:text="消费" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/checkBox4"
+            android:layout_alignStart="@+id/checkBox4"
+            android:layout_below="@+id/checkBox4"
+            android:text="消费" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkBox"
+            android:layout_alignBottom="@+id/checkBox"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:background="#40ccb7"
+            android:text="经理" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkBox3"
+            android:layout_alignBottom="@+id/checkBox3"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:background="#e2b64f"
+            android:text="组长" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_alignTop="@+id/checkBox5"
+            android:background="#d25d5d"
+            android:text="程序员" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:text="老板"
+            android:layout_above="@+id/checkBox2" />
+
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消费"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/checkBox2"
+            android:layout_alignStart="@+id/checkBox2" />
+    </RelativeLayout>
+
+    <com.wenld.eventsummary.event.MyFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#40ccb7"
+        android:orientation="vertical">
+
+        <com.wenld.eventsummary.event.MyLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="#e2b64f">
+
+            <com.wenld.eventsummary.event.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="100dp"
+                android:background="#d25d5d"
+                android:gravity="center"
+                android:text="这是MyTextView" />
+        </com.wenld.eventsummary.event.MyLinearLayout>
+    </com.wenld.eventsummary.event.MyFrameLayout>
+</LinearLayout>
